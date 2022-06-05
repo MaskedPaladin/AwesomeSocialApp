@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "650838043586",
+    "project_id": "awesomesocialapp-c59e1",
+    "storage_bucket": "awesomesocialapp-c59e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650838043586:android:826cba7a6fd066f85a445b",
+        "android_client_info": {
+          "package_name": "com.example.awesomesocialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650838043586-eb678sev4fh55fge47am4hu247tvofms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4Sr7tRPFWlFv9MM1DnPyXJHTX-k3ZivU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650838043586-eb678sev4fh55fge47am4hu247tvofms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
