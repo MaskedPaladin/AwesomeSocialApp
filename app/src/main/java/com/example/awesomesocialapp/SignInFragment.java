@@ -47,6 +47,8 @@ public class SignInFragment extends Fragment {
     private FirebaseAuth mAuth;
     private SignInButton googleSignInButton;
 
+    private Button signoutButton;
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -124,6 +126,14 @@ public class SignInFragment extends Fragment {
                 accederConGoogle();
             }
         });
+        signoutButton = view.findViewById(R.id.signOutButton);
+        signoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.action_signInFragment_to_signOutFragment);
+            }
+        });
+
         mAuth = FirebaseAuth.getInstance();
     }
     private void accederConEmail() {

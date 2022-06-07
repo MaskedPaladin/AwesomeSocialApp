@@ -8,7 +8,11 @@
         android:id="@+id/signInFragment"
         android:name="com.example.awesomesocialapp.SignInFragment"
         android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signOutFragment"
+            app:destination="@id/signOutFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signOutFragment"
         android:name="com.example.awesomesocialapp.SignOutFragment"

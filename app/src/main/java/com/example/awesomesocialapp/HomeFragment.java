@@ -151,23 +151,15 @@ public class HomeFragment extends Fragment {
             else{
                 holder.likeImageView.setImageResource(R.drawable.like_off);
             }
+            int likes = post.likes.size();
+            holder.numLikesTextView.setText(new String(String.valueOf(likes)));
             holder.likeImageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
                     holder.likeImageView.setOnClickListener(view -> {
                         FirebaseFirestore.getInstance().collection("posts").document(postKey).update("likes." + uid, post.likes.containsKey(uid) ? FieldValue.delete() : true);
-
                     });
-
-                    if (post.likes.containsKey(uid)) {
-                        holder.likeImageView.setImageResource(R.drawable.like_on);
-                        holder.numLikesTextView.setText(String.valueOf(post.likes.size()));
-                    }
-                    else{
-                        holder.likeImageView.setImageResource(R.drawable.like_off);
-                        holder.numLikesTextView.setText(String.valueOf(post.likes.size()));
-                    }
                 }
             });
         }
